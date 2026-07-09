@@ -24,10 +24,10 @@
 }
 
 .profile_picture {
-   display: flex;
-   justify-content: flex;
-   align-items:end; 
-
+    display: flex;
+    justify-content: flex;
+    align-items:end; 
+    padding-top: 10px;
 }
 
 .profile_picture #img1 {
@@ -36,3 +36,16 @@
     width: 300px;
 }
 
+.read_more_btn{
+    padding: 18%;
+}
+.read_more_btn button{
+    padding: 10px 30px;
+    color: white;
+    border-style: hidden;
+    background-color: black;
+    transition: background-color 0.2s ease;
+}
+.read_more_btn button:hover {
+        background-color: red;
+}

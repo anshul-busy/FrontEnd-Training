@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main{
+    padding-top: 2%;
+    display: flex;
+    flex-wrap:wrap;
+}
+article{
+    border: solid 1px black;
+    border-radius: 8px;
+    margin: 10px;
+    flex:1 1 200px; 
+}
+article h2, article p{
+    padding: 0 10px 10px;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+img{
+    
+    height: 200px;
+    max-width: 100%;
+    border-radius: 8px;
+}

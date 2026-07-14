@@ -1,0 +1,9 @@
+body
+{
+    background-color: black;
+    color: white;
+}
+#filterInput{
+    height: 20px;
+    width: 400px;
+}

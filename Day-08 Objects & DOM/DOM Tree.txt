@@ -1,0 +1,10 @@
+          Document   <-- Root Entry Point
+               |
+            <html>      <-- Root Element
+           /      \
+     <head>        <body>  <-- Sibling Nodes
+       |          /      \
+    <title>     <h1>     <p>
+
+       |          |       |
+   "My Page"   "Hello"  "Text content..."  <-- Leaf Text Nodes

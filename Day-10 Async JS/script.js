@@ -24,7 +24,7 @@ function dataCallback(error,data){
         console.log(data)
     }
 }
-fetchData1(URL, dataCallback)
+// fetchData1(URL, dataCallback)
 
 
 // ASYNC AWAIT

@@ -1,4 +1,8 @@
+
+
 const URL = "https://jsonplaceholder.typicode.com/users";
+const searchInput = document.getElementById("search");
+const container = document.getElementById("list");
 
 async function fetchData() {
   try {
@@ -21,9 +25,6 @@ async function fetchData() {
   }
 }
 fetchData();
-
-const searchInput = document.getElementById("search");
-const container = document.getElementById("list");
 
 searchInput.addEventListener("input", () => {
   const filterValue = searchInput.value.toLowerCase();

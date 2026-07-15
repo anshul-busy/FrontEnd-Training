@@ -1,16 +1,36 @@
-
-
 //FETCH URL
-// const URL = ;
+
+const URL = "https://jsonplaceholder.typicode.com/users";
 
 
-//callback
+//Callback
+function fetchData1(url){
+    fetch(url)
+    .then(response => {
+        if(!response.ok){
+            throw new Error("invalid URL")
+        }
+        const data= response.json()
+        return data
+    })
+    .then(data=>useCallback(null,data))
+    .catchO(error => console.log(error))
+}
+function dataCallback(error,data){
+    if(error){
+        console.log(error)
+        return
+    }else{
+        console.log(data)
+    }
+}
+fetchData1(URL, dataCallback)
 
 
 // ASYNC AWAIT
 async function fetchData(){
    try {
-     const response = await fetch("https://jsonplaceholder.typicode.com/users") 
+     const response = await fetch(URL) 
     if(!response.ok){
         throw new Error("Invalid URL")
     }
@@ -30,5 +50,6 @@ async function fetchData(){
     console.log(error)
    }
 }
-
 fetchData()
+
+

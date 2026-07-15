@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+#data-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+#data-container div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9em;
+}

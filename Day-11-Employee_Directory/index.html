@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Employee Directory</title>
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <a href="./Components/Dashboard.html"><i class="bx bxs-dashboard"></i> Dashboard</a>
+        <a href="./index.html"><i class="bx bx-user"></i> Employees</a>
+        <!-- <a href="./Components/tasks.html"><i class="bx bx-task"></i> Tasks</a> -->
+        <!-- <a href=""><i class="bx bx-cog"></i> Settings</a> -->
+        <!--   <a href=""><i class="bx bx-slider-alt"></i> Management</a> -->
+      </aside>
+      <main class="content">
+        <p class="emp-dir">Employee Directory</p>
+        <!-- <div id="input">
+    <input type="text" id="search" placeholder="Search for an Employee">
+        </div> -->
+        <!-- <div id="list"></div> -->
+        <div class="parent-container">
+          <div class="search">
+            <p class="head">Filter</p>
+
+            <div class="parent-search">
+  <div class="generic-div">
+    <p>ID</p>
+    <input id="search-id" class="generic-input" type="text" placeholder="Enter id" />
+  </div>
+  <div class="generic-div">
+    <p>Name</p>
+    <input id="search-name" class="generic-input" type="text" placeholder="Enter Name" />
+  </div>
+  <div class="generic-div">
+    <p>E-mail</p>
+    <input id="search-email" class="generic-input" type="text" placeholder="Enter E-mail" />
+  </div>
+ <div class="generic-div">
+  <p>Phone</p>
+  <input id="search-phone" class="generic-input" type="text" placeholder="Enter Phone" />
+</div>
+</div>
+
+<div class="search-btn">
+  <button id="btn">Search</button>
+  <button id="clear-btn" type="button">Clear</button>
+</div>
+
+          </div>
+
+  <div class="emp-table">
+  <p id="emp-list">Employees</p>
+  
+
+  <div class="emp-heading">
+    <input type="checkbox" id="select-all">
+    <p>ID</p>
+    <p>NAME</p>
+    <p>USERNAME</p>
+    <p>DEPARTMENT ROLE</p>
+    <p>CONTACT</p>
+  </div>
+  
+  <div class="emp-data">
+    
+
+    <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#01</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_1.jpeg" alt="">
+     <div class="info">
+   <p>Leighton Kramer</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>HR manager</p>
+      <p>People And Culture</p>
+      <p>6374592888</p>
+      
+    </div>
+    
+    <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#02</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_2.jpeg" alt="">
+     <div class="info">
+   <p>Lucian Lee</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>Software Developer-1</p>
+      <p>Tech and Product</p>
+       <p>8520149637</p>
+    </div>
+    
+<div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#03</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_3.jpeg" alt="">
+     <div class="info">
+   <p>Saoirse Conrad</p>
+        <p style="color: #2563EB;">email1@gmail.com</p>
+     </div>
+    </div>
+      <p>Software Developer-1</p>
+      <p>Tech and Product</p>
+      <p>1930485726</p>
+    </div>
+
+    <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#04</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_4.jpeg" alt="">
+     <div class="info">
+   <p>Marceline Avila</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>Team Lead</p>
+      <p>Tech and Product</p>
+      <p>6374592888</p>
+    </div>
+  </div>
+  <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#05</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_5.jpeg" alt="">
+     <div class="info">
+   <p>Franklin Sierra</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>Software Developer-1</p>
+      <p>Tech and Product</p>
+      <p>4067319582</p>
+    </div>
+    <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#06</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_6.jpeg" alt="">
+     <div class="info">
+   <p>Amelie Griffith</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>Software Developer-1</p>
+      <p>Tech and Product</p>
+      <p>7139582604</p>
+    </div>
+    <div class="emp-data1">
+      <input type="checkbox" class="row-check">
+      <p>#07</p>
+        <div class="user">
+
+     <img class="emp-img" src="./Assets/pic_7.jpeg" alt="">
+     <div class="info">
+   <p>Marceline Avila</p>
+        <p style="color: #2563EB;">email@gmail.com</p>
+     </div>
+    </div>
+      <p>Software Developer-1</p>
+      <p>Tech and Product</p>
+      <p>2684051937</p>
+    </div>
+</div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: black;
+    color: white; */
+     font-family:Inter,sans-serif;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+}
+.sidebar a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px ;
+    margin-bottom: 10px;    
+}
+.sidebar a:hover{
+    background: #374151;
+}
+.content{
+    flex:1;
+    margin-left: 200px;
+    padding: 30px;
+    color: black;
+    background: #f5f5f5;
+}
+.content .emp-dir{
+   color: black;
+   font-size: 30px;
+}
+#search{
+    border-radius: 8px;
+    margin: 10px;
+    height: 205px;
+    width: 300px;
+    
+}
+#input{
+    display: flex;
+    justify-content: center;
+
+}
+.search{
+    background-color: white;
+    color: black;
+    min-height: 180px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+     /* padding: 20px; */
+}
+.search p{
+    padding: 20px 0 0 20px;
+}
+.parent-container{
+    margin-top: 5%;
+}
+.generic-input{
+    margin: 5px 20px 0 20px;
+    padding: 5px;
+    border-radius: 3px ;
+    height: 25px;
+    width: 250px;
+    border : 1px black solid
+}
+.parent-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+.parent-search p {
+    font-size: 12px;
+}
+.search-btn{
+        display: flex;
+        flex-wrap: wrap;
+      margin: 20px 20px 10px 4px;
+}
+#clear-btn{
+     margin-left: 30px;
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 3px;
+    width: 100px;
+    color: white;
+    background-color: #2563EB;
+}
+#btn{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    height: 25px;
+    border-radius: 3px;
+    width: 100px;
+    color: white;
+    background-color: #2563EB;
+    
+}
+.emp-table{
+    background-color: white;
+    min-height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    border-radius: 8px;
+    padding: 20px 0 0 20px;
+}
+#emp-list{
+ padding-bottom: 2%;
+}
+
+#check{
+    width: 20px;
+    height: 20px;
+}
+/* Container for the table block */
+.emp-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    color: black; /* Ensuring visibility on white bg */
+}
+
+#emp-list {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.emp-heading, .emp-data1 {
+    display: grid;
+    /*Columns: checkbox width, 60px ID, 1fr Name, 1.5fr Role, 1.2fr Contact */
+    grid-template-columns: 40px 90px 2fr 1.2fr 1.2fr 1.2fr; 
+    align-items: center; /* Vertically centers text with checkboxes */
+    text-align: left;
+}
+
+.emp-heading {
+    font-size: 12px;
+    color: gray;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+
+/* Vertical wrapper for rows */
+.emp-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between each worker row */
+    margin-top: 10px;
+}
+
+
+.emp-data1 {
+    color: #1f2937;
+    font-size: 14px;
+    padding: 8px 0;
+    /* border-bottom: 1px solid #f3f4f6; Thin divider between entries */
+}
+
+.user{
+    display: flex;
+}
+.info{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding-left: 15px;
+}
+.emp-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}

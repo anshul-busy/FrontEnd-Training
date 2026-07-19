@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./Dashboard.css">
+</head>
+<body>
+      <aside class="sidebar">
+        <a href="./Dashboard.html"><i class="bx bxs-dashboard"></i> Dashboard</a>
+        <a href="../index.html"><i class="bx bx-user"></i> Employees</a>
+        <!-- <a href="./tasks.html"><i class="bx bx-task"></i> Tasks</a> -->
+        <!-- <a href=""><i class="bx bx-cog"></i> Settings</a> -->
+        <!--   <a href=""><i class="bx bx-slider-alt"></i> Management</a> -->
+      </aside>
+     <main class="content">
+        <p class="emp-dir">Dashboard</p>
+        <p>Welcome to the Employee Dashboard</p>
+    
+        <div class="parent-container">
+
+         <section class="stats">
+
+    <div class="card">
+        <div class="icon blue">
+            👥
+        </div>
+
+        <div class="details">
+            <p>Total Employees</p>
+            <h2>248</h2>
+            <span class="up">↑ 12.5%</span>
+            <small>from last month</small>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon green">
+            👤
+        </div>
+
+        <div class="details">
+            <p>Active Employees</p>
+            <h2>230</h2>
+            <span class="up">↑ 8.3%</span>
+            <small>from last month</small>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon purple">
+            💼
+        </div>
+
+        <div class="details">
+            <p>On Leave</p>
+            <h2>18</h2>
+            <span class="down">↓ 4.2%</span>
+            <small>from last month</small>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon orange">
+            📅
+        </div>
+
+        <div class="details">
+            <p>New Hires</p>
+            <h2>24</h2>
+            <span class="up">↑ 15.7%</span>
+            <small>from last month</small>
+        </div>
+    </div>
+
+</section>
+         
+
+ <div class="dashboard-grid">
+
+    <!-- Recent Employees -->
+    <div class="employees-card">
+
+        <div class="card-header">
+            <h3>Recent Employees</h3>
+            <a href="#">View All</a>
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>#EMP001</td>
+
+                    <td class="emp">
+                        <img src="images/user1.jpg">
+                        Caroline Bloeme
+                    </td>
+
+                    <td>Engineering</td>
+                    <td>HR Manager</td>
+                    <td>caroline@example.com</td>
+
+                    <td>
+                        <span class="status active">Active</span>
+                    </td>
+
+                    <td>⋯</td>
+                </tr>
+
+                <tr>
+                    <td>#EMP002</td>
+
+                    <td class="emp">
+                        <img src="images/user2.jpg">
+                        Darlene Robertson
+                    </td>
+
+                    <td>Marketing</td>
+                    <td>Marketing Lead</td>
+                    <td>darlene@example.com</td>
+
+                    <td>
+                        <span class="status active">Active</span>
+                    </td>
+
+                    <td>⋯</td>
+                </tr>
+
+                <tr>
+                    <td>#EMP003</td>
+
+                    <td class="emp">
+                        <img src="images/user3.jpg">
+                        Floyd Miles
+                    </td>
+
+                    <td>Sales</td>
+                    <td>Sales Executive</td>
+                    <td>floyd@example.com</td>
+
+                    <td>
+                        <span class="status leave">On Leave</span>
+                    </td>
+
+                    <td>⋯</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!-- Recent Activity -->
+
+    <div class="activity-card">
+
+        <h3>Recent Activity</h3>
+
+        <div class="activity">
+
+            <div class="circle green">👤</div>
+
+            <div>
+                <p>Darlene Robertson has been added as Marketing Lead</p>
+                <span>2m ago</span>
+            </div>
+
+        </div>
+
+        <div class="activity">
+
+            <div class="circle blue">💼</div>
+
+            <div>
+                <p>Floyd Miles requested leave for May 28 - May 30</p>
+                <span>1h ago</span>
+            </div>
+
+        </div>
+
+        <div class="activity">
+
+            <div class="circle orange">👤</div>
+
+            <div>
+                <p>Esther Howard updated her profile information</p>
+                <span>3h ago</span>
+            </div>
+
+        </div>
+
+        <div class="activity">
+
+            <div class="circle purple">📄</div>
+
+            <div>
+                <p>New report "Employee Performance Q2" generated</p>
+                <span>5h ago</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
